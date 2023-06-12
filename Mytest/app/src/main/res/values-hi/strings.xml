@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QAapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="webpage">ब्राउज़र</string>
+    <string name="buttonPage">बटनपेज</string>
+    <string name="hybridview">हाइब्रिडव्यू</string>
+    <string name="title_activity_second_main">SecondMainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">अगला</string>
+    <string name="previous">पहले का</string>
+    <string name="Tap_Button">टैप बटन</string>
+    <string name="Click_Button">क्लिक बटन</string>
+    <string name="Enter_Text">पाठ दर्ज करें</string>
+    <string name="FIND">खोज</string>
+    <string name="Enter_web_name">वेब-नाम दर्ज करें</string>
+    <string name="GPSLocation">जीपीएस स्थान</string>
+    <string name="GPS">जीपीएस</string>
+    <string name="GooG">GooG</string>
+    <string name="Timezone">समय क्षेत्र</string>
+</resources>

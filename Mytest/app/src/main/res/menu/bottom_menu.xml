@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/webpage"
+        android:title="@string/webpage"
+        android:icon="@drawable/ic_google_chrome" />
+
+    <item android:id="@+id/buttonPage"
+        android:title="@string/buttonPage"
+        android:icon="@drawable/ic_firefox" />
+
+    <item android:id="@+id/hybridView"
+        android:title="@string/hybridview"
+        android:icon="@drawable/ic_safari" />
+
+    <item android:id="@+id/GPS"
+        android:title="@string/GPS"
+        android:icon="@drawable/ic_resolution" />
+
+    <item android:id="@+id/google"
+        android:title="@string/GooG"
+        android:icon="@drawable/ic_bug" />
+
+</menu>

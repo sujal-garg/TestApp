@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.QAapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+    <application
+        android:name=".QATestApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QAapp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".BarCodeScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraXActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            />
+        </activity>
+
+        <receiver
+            android:name="com.example.QAapp.ProximityOnOff"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.example.QAapp.Proximity" />
+<!--                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>-->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Camera.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenAnimation"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name=".SecondMainActivity" -->
+        <!-- android:exported="true" -->
+        <!-- android:label="@string/title_activity_second_main" -->
+        <!-- android:theme="@style/Theme.QAapp.NoActionBar"> -->
+        <!-- <intent-filter> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

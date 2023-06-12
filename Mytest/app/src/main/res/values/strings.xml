@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">QAapp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="webpage">Browser</string>
+    <string name="buttonPage">ButtonPage</string>
+    <string name="hybridview">Hybrid</string>
+    <string name="title_activity_second_main">SecondMainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Tap_Button">Tap Button</string>
+    <string name="Click_Button">Click Button</string>
+    <string name="Enter_Text">Enter Text</string>
+    <string name="FIND">FIND</string>
+    <string name="Enter_web_name">Enter web-name</string>
+    <string name="GPSLocation">GPS Location</string>
+    <string name="GPS">GPS</string>
+    <string name="GooG">GooG</string>
+    <string name="Timezone">Timezone</string>
+
+</resources>
